@@ -92,12 +92,45 @@ This analysis underscores the importance of tailoring file I/O operations to sys
 ---
 
 ## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/SSDPerformance.git
+This project contains various resources and scripts to analyze disk performance on MacBook Air and Lenovo ThinkPad. 
+Below are the instructions for utilizing the different components of the project:
+
+### Prerequisites
+Ensure you have the following installed:
+- Python (for graphing scripts)
+- Make (to compile the C program)
+- An environment that supports executing shell scripts
+
+### Running the Performance Evaluation
+1. **Compile the C Program**:
+   Open your terminal, navigate to the project directory, and run:
    ```
-2. Run the performance tests on your system using the included scripts.
-3. Analyze the results and compare with the provided benchmarks.
+   make
+   ```
+2. **Execute Tests**:
+   You can run the tests by executing the `tests.sh` script:
+   ```
+   ./tests.sh
+   ```
+   
+3. **Analyze Results**:
+   After running the tests, the results will be logged. You can open the generated results file to analyze the performance metrics.
+   
+### Generating Graphs
+1. **For Lenovo ThinkPad**:
+   To visualize the data for Lenovo, run:
+   ```
+   python LenovoThinkpadGraphs.py
+   ```
+2. **For MacBook Air**:
+   To visualize the data for MacBook Air, run:
+   ```
+   python MacAirGraphs.py
+   ```
+   
+### Additional Resources
+For a more detailed explanation of the methodology and findings, refer to the **Disk Performance Analysis (MacBook Air and Lenovo ThinkPad).pdf** document.
+Feel free to contact me if you have any questions or need further assistance!
 
 ---
 
